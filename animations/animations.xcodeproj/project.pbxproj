@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,18 +13,22 @@
 		7D964BC0227DE65500D86D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D964BBE227DE65500D86D62 /* Main.storyboard */; };
 		7D964BC2227DE65A00D86D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D964BC1227DE65A00D86D62 /* Assets.xcassets */; };
 		7D964BC5227DE65A00D86D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D964BC3227DE65A00D86D62 /* LaunchScreen.storyboard */; };
+		7D964BCE227DE9B500D86D62 /* WellcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D964BCD227DE9B500D86D62 /* WellcomeScreenViewController.swift */; };
+		7DE65B40227DECD4009B75C0 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DE65B3F227DECD4009B75C0 /* loading_animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0230FCC54E13ADE12129029C /* Pods_animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6B1FE86A6E11AF22DA44E2 /* Pods-animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animations.release.xcconfig"; path = "Target Support Files/Pods-animations/Pods-animations.release.xcconfig"; sourceTree = "<group>"; };
 		7D964BB7227DE65500D86D62 /* animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D964BBA227DE65500D86D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D964BBA227DE65500D86D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
 		7D964BBC227DE65500D86D62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D964BBF227DE65500D86D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D964BC1227DE65A00D86D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D964BC1227DE65A00D86D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		7D964BC4227DE65A00D86D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D964BC6227DE65A00D86D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D964BCD227DE9B500D86D62 /* WellcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WellcomeScreenViewController.swift; path = ../WellcomeScreenViewController.swift; sourceTree = "<group>"; };
+		7DE65B3F227DECD4009B75C0 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
 		CCF997F862F76A28F1351705 /* Pods-animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animations.debug.xcconfig"; path = "Target Support Files/Pods-animations/Pods-animations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +65,41 @@
 		7D964BB9227DE65500D86D62 /* animations */ = {
 			isa = PBXGroup;
 			children = (
-				7D964BBA227DE65500D86D62 /* AppDelegate.swift */,
+				7DE65B42227DEF1E009B75C0 /* ViewControllers */,
+				7DE65B3E227DECBD009B75C0 /* Supporting Files */,
 				7D964BBC227DE65500D86D62 /* ViewController.swift */,
 				7D964BBE227DE65500D86D62 /* Main.storyboard */,
-				7D964BC1227DE65A00D86D62 /* Assets.xcassets */,
 				7D964BC3227DE65A00D86D62 /* LaunchScreen.storyboard */,
 				7D964BC6227DE65A00D86D62 /* Info.plist */,
 			);
 			path = animations;
+			sourceTree = "<group>";
+		};
+		7DE65B3E227DECBD009B75C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DE65B41227DECD7009B75C0 /* Animations */,
+				7D964BBA227DE65500D86D62 /* AppDelegate.swift */,
+				7D964BC1227DE65A00D86D62 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DE65B41227DECD7009B75C0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7DE65B3F227DECD4009B75C0 /* loading_animation.json */,
+			);
+			name = Animations;
+			path = "../Supporting Files/Animations";
+			sourceTree = "<group>";
+		};
+		7DE65B42227DEF1E009B75C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D964BCD227DE9B500D86D62 /* WellcomeScreenViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D68F826C5D26417F89478DB4 /* Frameworks */ = {
@@ -85,7 +116,6 @@
 				CCF997F862F76A28F1351705 /* Pods-animations.debug.xcconfig */,
 				6D6B1FE86A6E11AF22DA44E2 /* Pods-animations.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +182,7 @@
 				7D964BC5227DE65A00D86D62 /* LaunchScreen.storyboard in Resources */,
 				7D964BC2227DE65A00D86D62 /* Assets.xcassets in Resources */,
 				7D964BC0227DE65500D86D62 /* Main.storyboard in Resources */,
+				7DE65B40227DECD4009B75C0 /* loading_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D964BBD227DE65500D86D62 /* ViewController.swift in Sources */,
+				7D964BCE227DE9B500D86D62 /* WellcomeScreenViewController.swift in Sources */,
 				7D964BBB227DE65500D86D62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM8U3G9FKB;
 				INFOPLIST_FILE = animations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM8U3G9FKB;
 				INFOPLIST_FILE = animations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
